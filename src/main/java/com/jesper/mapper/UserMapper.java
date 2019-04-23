@@ -3,9 +3,11 @@ package com.jesper.mapper;
 
 import com.jesper.model.User;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 
 @Mapper
+@Component
 public interface UserMapper {
 
     User selectByNameAndPwd(User user);
